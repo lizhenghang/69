@@ -5,17 +5,32 @@ package entity;
  */
 public class Player extends People{
 
+
     private String id;
-    private String username;        //用户名
-    private String password;        //密码
+    private String playNme;         //游戏名
     private double money;           //充值钱币
     private int level;              //等级
-    private String tel;             //电话
-    private String qq;              //QQ
-    private String wechat;          //微信
-    private String alipay;          //支付宝
-    private String iCard;           //身份证号
-    private String email;           //邮箱
+    private Navigator navigator;    //导航器
+    private Integer longitude;      //经度（游戏）
+    private Integer latitude;       //纬度（游戏）
+
+    //todo 战船上提供炮弹接口，可以根据战船的等级升级接口数，每个接口可以安装大炮----策略模式
+
+    public Integer getLongitude() {
+        return longitude;
+    }
+
+    public void setLongitude(Integer longitude) {
+        this.longitude = longitude;
+    }
+
+    public Integer getLatitude() {
+        return latitude;
+    }
+
+    public void setLatitude(Integer latitude) {
+        this.latitude = latitude;
+    }
 
     public String getId() {
         return id;
@@ -25,20 +40,12 @@ public class Player extends People{
         this.id = id;
     }
 
-    public String getUsername() {
-        return username;
+    public String getPlayNme() {
+        return playNme;
     }
 
-    public void setUsername(String username) {
-        this.username = username;
-    }
-
-    public String getPassword() {
-        return password;
-    }
-
-    public void setPassword(String password) {
-        this.password = password;
+    public void setPlayNme(String playNme) {
+        this.playNme = playNme;
     }
 
     public int getLevel() {
@@ -57,51 +64,11 @@ public class Player extends People{
         this.money = money;
     }
 
-    public String getTel() {
-        return tel;
+    public Navigator getNavigator() {
+        return navigator;
     }
 
-    public void setTel(String tel) {
-        this.tel = tel;
-    }
-
-    public String getQq() {
-        return qq;
-    }
-
-    public void setQq(String qq) {
-        this.qq = qq;
-    }
-
-    public String getWechat() {
-        return wechat;
-    }
-
-    public void setWechat(String wechat) {
-        this.wechat = wechat;
-    }
-
-    public String getAlipay() {
-        return alipay;
-    }
-
-    public void setAlipay(String alipay) {
-        this.alipay = alipay;
-    }
-
-    public String getiCard() {
-        return iCard;
-    }
-
-    public void setiCard(String iCard) {
-        this.iCard = iCard;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
+    public void setNavigator(Navigator navigator) {
+        this.navigator = navigator;
     }
 }

@@ -8,6 +8,7 @@ public class People {
     private String name;        //姓名
     private String sex;         //性别
     private int age;            //年龄
+    private String description; //描述
 
     public String getName() {
         return name;
@@ -31,5 +32,13 @@ public class People {
 
     public void setAge(int age) {
         this.age = age;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
     }
 }
