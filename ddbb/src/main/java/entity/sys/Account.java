@@ -1,4 +1,4 @@
-package entity;
+package entity.sys;
 
 /**
  * 账户玩家

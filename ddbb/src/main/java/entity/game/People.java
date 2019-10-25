@@ -1,4 +1,4 @@
-package entity;
+package entity.game;
 
 /**
  * 游戏人类
@@ -9,6 +9,24 @@ public class People {
     private String sex;         //性别
     private int age;            //年龄
     private String description; //描述
+    private String profession;  //职业
+    private String skill;       //技能
+
+    public String getProfession() {
+        return profession;
+    }
+
+    public void setProfession(String profession) {
+        this.profession = profession;
+    }
+
+    public String getSkill() {
+        return skill;
+    }
+
+    public void setSkill(String skill) {
+        this.skill = skill;
+    }
 
     public String getName() {
         return name;

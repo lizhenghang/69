@@ -1,4 +1,4 @@
-package entity;
+package entity.game;
 
 /**
  * 岛屿
@@ -9,10 +9,19 @@ public class Island {
     private String name;            //岛名
     private double area;            //岛屿面积
     private double enableArea;      //可用面积      用来建造建筑，农田使用
-    private double disableArea;     //不可用面积     用来植树，改善环境用
+    private double disableArea;     //不可用面积     用来放牧
     private Integer longitude;      //经度（游戏）
     private Integer latitude;       //纬度（游戏）
     private double fertile;         //肥沃度
+    private String description;     //描述
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
 
     public String getId() {
         return id;

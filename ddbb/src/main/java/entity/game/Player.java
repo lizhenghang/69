@@ -1,4 +1,4 @@
-package entity;
+package entity.game;
 
 /**
  * 玩家实体
@@ -14,7 +14,7 @@ public class Player extends People{
     private Integer longitude;      //经度（游戏）
     private Integer latitude;       //纬度（游戏）
 
-    //todo 战船上提供炮弹接口，可以根据战船的等级升级接口数，每个接口可以安装大炮----策略模式
+
 
     public Integer getLongitude() {
         return longitude;
